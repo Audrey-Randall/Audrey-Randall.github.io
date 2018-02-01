@@ -68,19 +68,23 @@
 	-webkit-transition: background-color .75s, color .75s transform .75s;
 }
 
-.programing-languages{
-		font-family: Helvetica, sans-serif;
-	font-size: 15px;
+.programming-languages{
+	font-family: Helvetica, sans-serif;
+	font-size: 22px;
 	line-height: 167%; 
 	font-weight: 400;
 	margin-top:0px;
 	letter-spacing: 0px;
 
 }
-
 .secondary{
-	text-transform: uppercase;
-
+	font-weight: 500;
+}
+.date{
+	font-style: italic;
+}
+.footer{
+	padding-bottom: 200px;
 }
 
 section{
@@ -105,15 +109,13 @@ li {
 
 }
 
-li a {
+ul li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     border-bottom-style: none;
 }
-
-
 
 h1{
 	font-family: 'Merriweather', sans-serif;
@@ -139,11 +141,10 @@ h2{
 
 h3{
 	margin-top: 0;
-
 	font-family: 'Merriweather', sans-serif;
 	font-size: 2em;
 	font-weight: 900;
-	margin-bottom: 0px;
+	margin-bottom: 20px;
 }
 
 h4{
@@ -163,29 +164,36 @@ h5{
 }
 p{
 	font-family: Helvetica, sans-serif;
-	font-size: 15px;
+	font-size: 18px;
 	line-height: 167%; 
 	font-weight: 100;
 	margin-top:0px;
 	letter-spacing: 0px;
-}
-
-
-p a {	text-decoration: none;
+}	
+li a {	text-decoration: none;
 	color:black;
 	border-bottom-style: solid;
 	border-width: 1.5px;
 	border-color:rgba(5, 68, 44, 1.0);}
-
-p a:hover{
+li a:hover{
 	color: rgba(12, 145, 91, 1.0);
 	border-bottom-style: none;
 }
 
-p a:active{
+li a:active{
 	color: rgba(5, 68, 44, 1.0);
 }
-
 a {	text-decoration: none;
-	}
+	color:black;
+	border-bottom-style: solid;
+	border-width: 1.5px;
+	border-color:rgba(5, 68, 44, 1.0);}
+a:hover{
+	color: rgba(12, 145, 91, 1.0);
+	border-bottom-style: none;
+}
+
+a:active{
+	color: rgba(5, 68, 44, 1.0);
+}
 
