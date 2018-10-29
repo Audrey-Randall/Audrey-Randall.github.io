@@ -1,14 +1,14 @@
 
 .page-content{
-	padding-left: 150px; 
-	padding-right: 150px; 
-	padding-top: 10px; 
+	padding-left: 150px;
+	padding-right: 150px;
+	padding-top: 10px;
 	padding-bottom: 100px;
 	margin:0;
 	background: white;
 	font-family: 'Merriweather', sans-serif;
 	color:black;
-}	
+}
 
 
 .name{
@@ -16,7 +16,7 @@
 	color: white;
 }
 
-.name a{	
+.name a{
 	text-decoration: none;
 	border-bottom-style: none;
 	color: white;}
@@ -46,7 +46,7 @@
 
 .contact:hover{
 	background-color: rgba(255, 355, 355, .3);
-} 
+}
 .head{
 	background-color: rgba(5, 68, 44, 1.0);
 	padding-top: 50px;
@@ -67,16 +67,6 @@
 	align-self: flex-start;
 	-webkit-transition: background-color .75s, color .75s transform .75s;
 }
-
-.programming-languages{
-	font-family: Helvetica, sans-serif;
-	font-size: 22px;
-	line-height: 167%; 
-	font-weight: 400;
-	margin-top:0px;
-	letter-spacing: 0px;
-
-}
 .secondary{
 	font-weight: 500;
 }
@@ -86,10 +76,15 @@
 .footer{
 	padding-bottom: 200px;
 }
+.resume{
+	position: absolute;
+	left: 25%;
+	width: 60%;
+	height: 130%;
+}
 
 section{
 	padding-top: 40px;
-
 }
 
 ul {
@@ -120,8 +115,8 @@ ul li a {
 h1{
 	font-family: 'Merriweather', sans-serif;
 	font-size: 3em;
-	line-height: 80%; 
-	font-weight: 900; 
+	line-height: 80%;
+	font-weight: 900;
 	letter-spacing: 0px;
 	margin-top: 10px;
 
@@ -152,7 +147,7 @@ h4{
 	font-size: 1em;
 	font-weight: 100;
 	margin-top: 3px;
-	margin-bottom: 10px; 
+	margin-bottom: 10px;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 }
@@ -165,11 +160,11 @@ h5{
 p{
 	font-family: Helvetica, sans-serif;
 	font-size: 18px;
-	line-height: 167%; 
+	line-height: 167%;
 	font-weight: 100;
 	margin-top:0px;
 	letter-spacing: 0px;
-}	
+}
 li a {	text-decoration: none;
 	color:black;
 	border-bottom-style: solid;
@@ -196,4 +191,3 @@ a:hover{
 a:active{
 	color: rgba(5, 68, 44, 1.0);
 }
-
