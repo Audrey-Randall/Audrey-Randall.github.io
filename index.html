@@ -15,7 +15,7 @@
 	<nav class="navigation">
 		<ul>
 			<li><a href="index.html" class="menu-item"><b>Home</a></b></li>
-			<li><a href="about.html" class="menu-item">About</a></li>
+			<!--<li><a href="about.html" class="menu-item">About</a></li>-->
 			<li><a href="resume.html" class="menu-item">Resume</a></li>
 			<li><a href="contact.html" class="contact">Contact</a></li>
 		</ul>
@@ -25,7 +25,37 @@
 
 	<div class="page-content">
 		<section>
-			<em>Oops! This website is a work in progress, please try another tab!</em>
+			<h3>About Me</h3>
+			I am a PhD student at the University of California San Diego (UCSD), working with Aaron Schulman, Geoff Voelker, and Stefan Savage. 
+			My research interests include security, privacy, systems and networking. Outside of work, I enjoy distance running, rock climbing, 
+			and ceramics.
+			<h3>Current Projects</h3> 
+
+			<h4>Stalkerware Detection</h4>
+			"Stalkerware" is spyware that can be used to remotely track a victim's location, communications, and/or browsing activity. 
+			It is particularly dangerous and difficult to defend against when used in the context of intimate partner violence, or IPV. The ubiquity of 
+			smartphones has made it easy even for someone with no technical skills to perform surveillance of a device that they have access to.
+			 In the context of IPV, abusers often have physical access to the devices of their partners, and either know or can coerce the passwords
+			  to those devices. With such unrestricted access, an abundance of surveillance options exist, whether the goal is to track location,
+			 remotely block incoming calls or messages, record all communications, monitor browsing history, or lock a survivor out of their 
+			 accounts. Very little information exists regarding the prevalence of stalkerware in the wild, so the goal of this work is to measure how
+			 much of this spyware is in use today.
+
+			<h4>Network Hygiene</h4>
+			Common security advice includes injunctions such as "Update your operating system," "run antivirus," and "change your passwords frequently."
+			However, there isn't much information available about if this advice actually lowers a user's chances of getting infected by malware.
+			Working with a unique network vantage point, we are attempting to measure the correlations between user behaviors and infection rates
+			to see what behavioral factors are actually likely to get you owned online.
+
+			<h3>Past Projects</h3>
+			<h4>Censorship Circumvention in China</h4>
+			I worked with Prof. Eric Wustrow at University of Colorado Boulder to create a tool called Metis that could predict which websites a user visited were likely
+			 to be censored, so that it could route only those websites through a censorship circumvention tool, and connect to the others directly.  
+			 The idea was that circumvention tools are usually slow, because they connect to EVERY website through circuitous routes, not just the ones that
+			  would get blocked. 
+			 Metis could also collect aggregate information about which websites were blocked, to give the research community a better idea of which sites
+			 get censored where. I implemented differential privacy (Google's RAPPOR) to protect user privacy. This project was never deployed, but I 
+			 learned a lot in the process.
 		</section>
 	</div>
 
