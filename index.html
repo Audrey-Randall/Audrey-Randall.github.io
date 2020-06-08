@@ -2,11 +2,13 @@
 <html lang = "en-US">
 	 <head>
 	 <meta charset = "UTF-8">
-	 <title>Resume</title>
+	 <title>Audrey Randall</title>
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
 	 <link rel = "stylesheet" type = "text/css" href = "styles.css" >
 	 <meta name="author" content="Audrey Randall">
-	 <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700,Playfair+Display:400,400i,900i" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700,Playfair+Display:400,400i,900i" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 	 </head>
  <body>
 
@@ -17,7 +19,7 @@
 			<li><a href="index.html" class="menu-item"><b>Home</a></b></li>
 			<!--<li><a href="about.html" class="menu-item">About</a></li>-->
 			<li><a href="resume.html" class="menu-item">Resume</a></li>
-			<li><a href="contact.html" class="contact">Contact</a></li>
+			<li><a href="contact.html" class="menu-item">Contact</a></li>
 		</ul>
 	</nav>
 	<h1 class="name"><a href="index.html">Audrey Randall</a></h1>
@@ -28,20 +30,26 @@
 				<img src="switzerland_portrait_headshot.jpg" style="float:right; width:25%; margin-left: 2%">
 				<h3>About Me</h3>
 				I am a PhD student at the University of California San Diego (UCSD), working with Aaron Schulman, Geoff Voelker, and Stefan Savage. 
-				My research interests include security, privacy, systems and networking. Outside of work, I enjoy distance running, rock climbing, 
-				and ceramics.
+                <h4>Research Interests</h4>
+                Internet Measurement    |   Security    |   Privacy |   Networking
 
 			<h3>Current Projects</h3> 
 
-			<h4>Stalkerware Detection</h4>
-			"Stalkerware" is spyware that can be used to remotely track a victim's location, communications, and/or browsing activity. 
-			It is particularly dangerous and difficult to defend against when used in the context of intimate partner violence, or IPV. The ubiquity of 
-			smartphones has made it easy even for someone with no technical skills to perform surveillance of a device that they have access to.
-			 In the context of IPV, abusers often have physical access to the devices of their partners, and either know or can coerce the passwords
-			  to those devices. With such unrestricted access, an abundance of surveillance options exist, whether the goal is to track location,
-			 remotely block incoming calls or messages, record all communications, monitor browsing history, or lock a survivor out of their 
-			 accounts. Very little information exists regarding the prevalence of stalkerware in the wild, so the goal of this work is to measure how
-			 much of this spyware is in use today.
+			<h4>Trufflehunter</h4>
+			Certain phenomena on the Internet, such as the prevalence of 
+            stalkerware, contract cheating services, or phishing domains, are 
+            difficult to measure because of their sensitive and rare natures. However, 
+            all of these phenomena are visible within the Domain Name System. With the 
+            rise of public DNS resolvers such as Google Public DNS, Cloudflare DNS
+            OpenDNS, and Quad9, a new opportunity has arisen to study the 
+            prevalence of such occurrences using DNS cache sniffing. Cache sniffing on 
+            public resolvers, in contrast to previous work published on small, 
+            misconfigured open resolvers, can yield far more information, while at the 
+            same time preserving privacy. However, public resolvers have complex and 
+            unique caching behaviors that also make cache sniffing far more difficult. 
+            We studied the caching strategies of four public DNS resolvers and 
+            present a method for using DNS cache sniffing on each of them. We then built a tool, <b>Trufflehunter</b>, to
+            estimate the popularity of the aforementioned applications, which is difficult to measure by other means.
 
 			<h4>Network Hygiene</h4>
 			Common security advice includes injunctions such as "Update your operating system," "run antivirus," and "change your passwords frequently."
