@@ -27,13 +27,51 @@
 
 	<div class="page-content">
 		<section>
-				<img src="switzerland_portrait_headshot.jpg" style="float:right; width:25%; margin-left: 2%">
-				<h3>About Me</h3>
-				I am a PhD student at the University of California San Diego (UCSD), working with Aaron Schulman, Geoff Voelker, and Stefan Savage. 
-                <h4>Research Interests</h4>
-                Internet Measurement    |   Security    |   Privacy |   Networking
+            <img src="headshot_good.jpg" style="float:right; width:20%; margin-left: 2%">
+            <h3>About Me</h3>
+            I am a PhD student at the University of California San Diego (UCSD), working with Aaron Schulman, Geoff Voelker, and Stefan Savage. 
+            <h4>Research Interests</h4>
+            Internet Measurement    |   Security    |   Privacy |   Networking
 
-			<h3>Current Projects</h3> 
+            <h3>Current Projects</h3>
+			
+            <h4>DNS Interception</h4>
+            While working on Trufflehunter, we discovered that some of our queries were getting intercepted
+            before they could arrive at the resolver we sent them to. Furthermore, the responses we received were 
+            spoofed to look like they had come from the query's original destination. The responses were not 
+            otherwise changed: this interception is transparent from the point of view of the users. Upon
+            investigation, we discovered the culprit: our own Customer Premises Equipment (CPE), also known as
+            a home router. We conducted a measurement study to find out if this interception happens anywhere else,
+            and if so, where in the network the interceptors are located. Our results were published at IMC 2021 in
+            a short paper entitled <a href="https://www.sysnet.ucsd.edu/~voelker/pubs/homejack-imc21.pdf"><em>Home is Where the Hijacking Is: Understanding DNS Interception by Residential Routers.</em></a>
+
+            <h4>Bounce Tracking</h4>
+            Some browsers, such as Safari, Firefox, and Brave, are moving towards blocking
+            third-party tracking cookies by default. Trackers have responded by developing
+            new techniques for tracking users between websites. For example, say a tracker
+            wishes to track a user from website A to website B. The tracker can manipulate the link
+            on A that points to B, by stuffing a user identifier into a 
+            query parameter in the link when it is clicked. The tracker could also redirect
+            the link: instead of taking the user directly to site B, the link redirects from site A
+            to site "track.com" to site B. Visiting "track.com" as a top level frame allows 
+            the tracker to set a cookie in a first party context. This redirection-based technique is called
+            "bounce tracking." During an internship with <a href="https://brave.com/"><em>Brave Software</em></a>, we 
+            crawled the web to measure the prevalence of bounce tracking and query stuffing. 
+            This work is currently ongoing.
+
+            <h4>Blockchain DNS</h4>
+            Traditional DNS relies on centralized entities (registries and registrars) that control
+            who can purchase domain names. These entities have the power to remove domain names from
+            zone files and prevent them from being accessed. Due to a perception that this power 
+            can lead to censorship, "blockchain DNS" has arisen as a censorship-proof alternative
+            to traditional DNS. In blockchain DNS, DNS records are stored within various blockchains,
+            which means no central organization has the ability to remove them. Unfortunately,
+            this arrangement has proven attractive to malware authors, who use blockchain DNS to record
+            the records of their command and control servers. By some estimates, the majority of
+            domains in some DNS-supporting blockchains are associated with malware. We intend to study this ecosystem and
+            present possible solutions to the rampant abuse. This work is ongoing.
+
+            <h3>Selected Past Projects</h3> 
 
 			<h4>Trufflehunter</h4>
 			Certain phenomena on the Internet, such as the prevalence of 
@@ -49,23 +87,22 @@
             unique caching behaviors that also make cache sniffing far more difficult. 
             We studied the caching strategies of four public DNS resolvers and 
             present a method for using DNS cache sniffing on each of them. We then built a tool, <b>Trufflehunter</b>, to
-            estimate the popularity of the aforementioned applications, which is difficult to measure by other means.
+            estimate the popularity of the aforementioned applications, which is difficult to measure by other means. This work was published at IMC 2020.
 
 			<h4>Network Hygiene</h4>
 			Common security advice includes injunctions such as "Update your operating system," "run antivirus," and "change your passwords frequently."
 			However, there isn't much information available about if this advice actually lowers a user's chances of getting infected by malware.
-			Working with a unique network vantage point, we are attempting to measure the correlations between user behaviors and infection rates
-			to see what behavioral factors are actually likely to get you owned online.
+			Working with a unique network vantage point, we measured the correlations between user behaviors and infection rates
+			to see what behavioral factors are actually likely to get you owned online. This work was published at IMC 2019.
 
-			<h3>Past Projects</h3>
-			<h4>Censorship Circumvention in China</h4>
+			<!-- <h4>Censorship Circumvention in China</h4>
 			I worked with Prof. Eric Wustrow at University of Colorado Boulder to create a tool called Metis that could predict which websites a user visited were likely
 			 to be censored, so that it could route only those websites through a censorship circumvention tool, and connect to the others directly.  
 			 The idea was that circumvention tools are usually slow, because they connect to EVERY website through circuitous routes, not just the ones that
 			  would get blocked. 
 			 Metis could also collect aggregate information about which websites were blocked, to give the research community a better idea of which sites
 			 get censored where. I implemented differential privacy (Google's RAPPOR) to protect user privacy. This project was never deployed, but I 
-			 learned a lot in the process.
+			 learned a lot in the process. -->
 		</section>
 	</div>
 
